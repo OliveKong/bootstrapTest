@@ -28,11 +28,10 @@ h6 {
 .intro-header {
 	height: 855px;
 	padding-top: 50px;
-	/*background分开写在iphone里才起作用呢*/
-	background-image: url("http://olivekong.sviping.com/img/codepen/profile/11.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+	background-image:url('http://olivekong.sviping.com/img/codepen/profile/11.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
 }
 
 .bg-overlay {
@@ -56,7 +55,7 @@ h6 {
 
 .intro-message>h3 {
 	font-size: 20px;
-	color: #000;
+	color: rgba(200,200,200,0.9);
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
@@ -70,9 +69,17 @@ hr.intro-divider {
 	color: #000;
 	background: #C0C0C0;
 	border: 2px solid rgba(0, 0, 0, 0.9);
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 20);
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 	letter-spacing: 2px;
+	transition:all ease 0.5s;
+	-webkit-transition:all ease 0.5s;
+}
+.btn:hover{
+	background:#000;
+	color:#fff;
+	border-color:#000;
+	transform:scale(1.1);
 }
 @media (max-width: 767px){
 	.intro-message>h1{
@@ -88,21 +95,23 @@ hr.intro-divider {
 }
 .content-section-a {
 	padding: 50px 0;
-	background-image: url("http://olivekong.sviping.com/img/codepen/profile/1.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+	background-image:url('http://olivekong.sviping.com/img/codepen/profile/2.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
 	height: 855px;
 }
 .section-heading+p{
-	color:#000;
+	color:#eee;
 	font-size:22px;
 	font-weight:bold;
+/* 	text-shadow:1px 0px 1px rgba(0,0,0,0.8); */
 }
 h2.section-heading{
 	font-size:3em;
-	color:#000;
+	color:#fafafa;
 	margin-top:100px;
+/* 	text-shadow:1px 1px 2px rgba(255,255,255,0.6); */
 }
 .lead .link{
 	color:#fff;
@@ -112,7 +121,9 @@ h2.section-heading{
 }
 .portfolio-section{
 /* 	height:855px; */
-	background:url('http://olivekong.sviping.com/img/codepen/profile/2.jpg') no-repeat center center;
+	background-image:url('http://olivekong.sviping.com/img/codepen/profile/12.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
 	background-size:cover;
 	color:#cdcdcd;
 }
@@ -177,4 +188,25 @@ h2.section-heading{
 	line-height:2.2;
 	color:#fff;
 	font-family:Microsoft Yahei;
+}
+.last{
+	height:600px;
+	background-image:url('http://olivekong.sviping.com/img/codepen/profile/44.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+.last .section-heading{
+	color:#333;
+}
+.last .intro-social-buttons{
+	padding-top:100px;
+}
+.last .intro-social-buttons li{
+	margin-bottom:10px;
+}
+@media(max-width:768px){
+	.last .intro-social-buttons{
+		padding-top:20px;
+	}
 }
