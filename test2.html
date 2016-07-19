@@ -9,6 +9,7 @@
 	<link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/text2.css">
 	<script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.js"></script>
 	<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
 </head>
 <body>
@@ -35,7 +36,7 @@
 		</div>
 	</nav>
 	<a name="home"></a>
-	<div class="intro-header">
+	<div class="intro-header lazy"  data-original="http://olivekong.sviping.com/img/codepen/profile/11.jpg">
 		<div class="bg-overlay">
 			<div class="container">
 				<div class="row">
@@ -66,7 +67,7 @@
 		</div>
 	</div>
 	<a name="about"></a>
-	<div class="content-section-a">
+	<div class="content-section-a lazy"  data-original="http://olivekong.sviping.com/img/codepen/profile/2.jpg">
 		<div class="bg-overlay2">
 			<div class="container">
 				<div class="row">
@@ -83,14 +84,14 @@
 						</p>
 					</div>
 					<div class="col-lg-5 col-lg-offset-2 col-md-6 col-sm-6 ">
-						<img class="img-circle img-responsive" src="http://olivekong.sviping.com/img/codepen/profile/q.jpg" alt="" />
+						<img class="img-circle img-responsive" data-original="http://olivekong.sviping.com/img/codepen/profile/q.jpg" alt="" />
 </div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<a name="portfolio"></a>
-	<div class="portfolio-section">
+	<div class="portfolio-section lazy"  data-original="http://olivekong.sviping.com/img/codepen/profile/12.jpg">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
@@ -106,7 +107,7 @@
 								<i class="fa fa-fire fa-3x"></i>
 							</div>
 						</div>
-						<img class="img-responsive" src="http://olivekong.sviping.com/img/codepen/profile/dog1.jpg" alt="" />
+						<img class="img-responsive" data-original="http://olivekong.sviping.com/img/codepen/profile/dog1.jpg" alt="" />
 					</a>
 					<div class="portfolio-caption text-center">
 						<h4>可爱的小狗1</h4>
@@ -120,7 +121,7 @@
 								<i class="fa fa-fire fa-3x"></i>
 							</div>
 						</div>
-						<img class="img-responsive" src="http://olivekong.sviping.com/img/codepen/profile/dog2.jpg" alt="" />
+						<img class="img-responsive" data-original="http://olivekong.sviping.com/img/codepen/profile/dog2.jpg"/>
 					</a>
 					<div class="portfolio-caption text-center">
 						<h4>可爱的小狗2</h4>
@@ -134,7 +135,7 @@
 								<i class="fa fa-fire fa-3x"></i>
 							</div>
 						</div>
-						<img class="img-responsive" src="http://olivekong.sviping.com/img/codepen/profile/dog3.jpg" alt="" />
+						<img class="img-responsive" data-original="http://olivekong.sviping.com/img/codepen/profile/dog3.jpg" />
 					</a>
 					<div class="portfolio-caption text-center">
 						<h4>可爱的小狗3</h4>
@@ -148,7 +149,7 @@
 								<i class="fa fa-fire fa-3x"></i>
 							</div>
 						</div>
-						<img class="img-responsive" src="http://olivekong.sviping.com/img/codepen/profile/dog4.jpg" alt="" />
+						<img class="img-responsive" data-original="http://olivekong.sviping.com/img/codepen/profile/dog4.jpg" alt="" />
 					</a>
 					<div class="portfolio-caption text-center">
 						<h4>可爱的小狗1</h4>
@@ -162,7 +163,7 @@
 								<i class="fa fa-fire fa-3x"></i>
 							</div>
 						</div>
-						<img class="img-responsive" src="http://olivekong.sviping.com/img/codepen/profile/dog5.jpg" alt="" />
+						<img class="img-responsive" data-original="http://olivekong.sviping.com/img/codepen/profile/dog5.jpg" alt="" />
 					</a>
 					<div class="portfolio-caption text-center">
 						<h4>可爱的小狗2</h4>
@@ -176,7 +177,7 @@
 								<i class="fa fa-fire fa-3x"></i>
 							</div>
 						</div>
-						<img class="img-responsive" src="http://olivekong.sviping.com/img/codepen/profile/dog6.jpg" alt="" />
+						<img class="img-responsive" data-original="http://olivekong.sviping.com/img/codepen/profile/dog6.jpg" alt="" />
 					</a>
 					<div class="portfolio-caption text-center">
 						<h4>可爱的小狗3</h4>
@@ -184,10 +185,10 @@
 					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
 	</div>
 	<a name="contact"></a>
-	<div class="last">
+	<div class="last lazy"  data-original="http://olivekong.sviping.com/img/codepen/profile/44.jpg">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8">
@@ -212,7 +213,17 @@
 					</ul>
 				</div>
 			</div>
-		</div>	
+		</div>
 	</div>
 </body>
 </html>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+    	$("div.lazy").lazyload({
+    		effect : "fadeIn"
+    	});
+    	$("img").lazyload({
+    		effect : "fadeIn"
+    	});
+    });
+</script>
