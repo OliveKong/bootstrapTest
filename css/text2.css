@@ -210,3 +210,8 @@ h2.section-heading{
 		padding-top:20px;
 	}
 }
+@media(max-width:767px){
+	.img-circle{
+		visibility: hidden;
+	}
+}
